@@ -1,7 +1,7 @@
 {
-  "name": "mern-auth",
+  "name": "ghibliv6",
   "version": "1.0.0",
-  "description": "Mern Auth Example",
+  "description": "real estate webpage for studio ghibli",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -10,7 +10,7 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "",
+  "author": "Tina Nguyen, Maria Doan, Rebekah Lee",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
