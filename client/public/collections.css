@@ -24,7 +24,7 @@ body{
     margin: auto;
     width: 100%;
 }
-
+/* Navigation Bar */
 .navbar{
     width: 95%;
     height: 15vh;
@@ -78,12 +78,11 @@ nav ul li::after{
 nav ul li:hover::after{
     width: 100%;
 }
-
+/* Cart */
 #cart{
     font-size: 1.8rem;
     cursor: pointer;
 }
-/* Cart */
 .cart{
     z-index: 1;
     position:absolute;
@@ -186,10 +185,10 @@ section {
     margin-bottom: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Shop Content */
 .shop{
     margin-top: 5rem;
 }
-/* Shop Content */
 .shop-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
@@ -217,6 +216,7 @@ section {
 .price{
     font-weight: 500;
 }
+/* add to cart */ 
 .add-cart{
     position: absolute;
     bottom: 0;

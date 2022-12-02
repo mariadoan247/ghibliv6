@@ -30,6 +30,18 @@ class Dashboard extends Component {
                 letterSpacing: "1.5px",
                 marginTop: "1rem"
               }}
+              onClick={event => window.location.href='home.html'}
+              className="btn btn-large waves-effect waves-light hoverable white black-text accent-3"
+            >
+              Home
+            </button>
+            <button
+              style={{
+                width: "150px",
+                borderRadius: "3px",
+                letterSpacing: "1.5px",
+                marginTop: "1rem"
+              }}
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >
