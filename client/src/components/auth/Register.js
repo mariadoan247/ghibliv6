@@ -53,9 +53,9 @@ class Register extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="container">
+      <div className="container" style={{ marginTop: "1px" }}>
         <div className="row">
-          <div className="col s8 offset-s2">
+          <div className="col s7 offset-s2 white">
             <Link to="/" className="btn-flat waves-effect">
               <i className="material-icons left">keyboard_backspace</i> Back to
               home
@@ -111,20 +111,6 @@ class Register extends Component {
                 <label htmlFor="password">Password</label>
                 <span className="red-text">{errors.password}</span>
               </div>
-              <div className="input-field col s12">
-                <input
-                  onChange={this.onChange}
-                  value={this.state.password2}
-                  error={errors.password2}
-                  id="password2"
-                  type="password"
-                  className={classnames("", {
-                    invalid: errors.password2
-                  })}
-                />
-                <label htmlFor="password2">Confirm Password</label>
-                <span className="red-text">{errors.password2}</span>
-              </div>
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                 <button
                   style={{
@@ -138,6 +124,7 @@ class Register extends Component {
                 >
                   Sign up
                 </button>
+                <h4></h4>
               </div>
             </form>
           </div>
