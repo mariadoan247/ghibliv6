@@ -6,6 +6,7 @@ This project uses the following technologies:
 - [Express](http://expressjs.com/) and [Node](https://nodejs.org/en/) for the backend
 - [MongoDB](https://www.mongodb.com/) for the database
 - [Redux](https://redux.js.org/basics/usagewithreact) for state management between React components
+- [HTML/CSS](https://html.com/) for frontend
 
 ## Quick Start
 
