@@ -28,3 +28,9 @@ npm run dev
 To have access to the MongoDB, email your MongoDB credentials to mariadoan247@ou.edu 
 so you can be added to the project. Once added, go to the project and add your IP address
 to the network access section.
+
+## Resources
+- https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669
+- https://www.youtube.com/watch?v=18Jvyp60Vbg
+- https://www.youtube.com/watch?v=llVt3SX_VsY
+- https://www.youtube.com/watch?v=qXXknB5bePU&t=5s
