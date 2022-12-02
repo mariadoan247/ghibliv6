@@ -2,27 +2,27 @@ import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { registerUser } from "../../actions/authActions";
+import { registerHouse } from "../src/actions/houseActions";
 import classnames from "classnames";
 
-class Register extends Component {
+class Houses extends Component {
   constructor() {
     super();
     this.state = {
       name: "",
-      email: "",
-      password: "",
-      password2: "",
+      amount: 0,
+      price: 0.0,
+      ownerEmail: "",
       errors: {}
     };
   }
 
-  componentDidMount() {
-    // If logged in and user navigates to Register page, should redirect them to account
-    if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/myAccount");
-    }
-  }
+  // componentDidMount() {
+  //   // If logged in and user navigates to collections page
+  //   if (this.props.auth.isAuthenticated) {
+  //     this.props.history.push("/myAccount");
+  //   }
+  // }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
@@ -39,14 +39,14 @@ class Register extends Component {
   onSubmit = e => {
     e.preventDefault();
 
-    const newUser = {
+    const newHouse = {
       name: this.state.name,
-      email: this.state.email,
-      password: this.state.password,
-      password2: this.state.password2
+      amount: this.state.amount,
+      price: this.state.price,
+      ownerEmail: this.state.ownerEmail
     };
 
-    this.props.registerUser(newUser, this.props.history);
+    this.props.registerHouse(newHouse, this.props.history);
   };
 
   render() {
@@ -134,8 +134,8 @@ class Register extends Component {
   }
 }
 
-Register.propTypes = {
-  registerUser: PropTypes.func.isRequired,
+Houses.propTypes = {
+  registerHouse: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
@@ -147,5 +147,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { registerUser }
-)(withRouter(Register));
+  { registerHouse }
+)(withRouter(Houses));

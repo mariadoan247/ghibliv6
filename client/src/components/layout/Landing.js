@@ -7,17 +7,13 @@ class Landing extends Component {
       <div style={{ height: "75vh" }} className="container valign-wrapper">
         <div className="row">
           <div className="col s12 center-align">
-            <h4>
-              <b>Build</b> a login/auth app with the{" "}
-              <span style={{ fontFamily: "monospace" }}>MERN</span> stack from
-              scratch
-            </h4>
-            <p className="flow-text grey-text text-darken-1">
-              Create a (minimal) full-stack app with user authentication via
-              passport and JWTs
-            </p>
-            <br />
+            <img src="https://p.kindpng.com/picc/s/83-834491_official-studio-ghibli-logo-hd-png-download.png" 
+              width="290"
+              height="160"
+              />;
+              <h4></h4>
             <div className="col s6">
+              <h4></h4>
               <Link
                 to="/register"
                 style={{
@@ -31,6 +27,7 @@ class Landing extends Component {
               </Link>
             </div>
             <div className="col s6">
+            <h4></h4>
               <Link
                 to="/login"
                 style={{

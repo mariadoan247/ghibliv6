@@ -15,12 +15,12 @@ class Dashboard extends Component {
     return (
       <div style={{ height: "75vh" }} className="container valign-wrapper">
         <div className="row">
-          <div className="landing-copy col s12 center-align">
+          <div className="landing-copy col s12 center-align white">
             <h4>
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
+                You are logged into the {" "}
+                Ghibli Real Estate web app 👏
               </p>
             </h4>
             <button
@@ -35,6 +35,7 @@ class Dashboard extends Component {
             >
               Logout
             </button>
+            <h4></h4>
           </div>
         </div>
       </div>
