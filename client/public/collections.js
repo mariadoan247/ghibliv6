@@ -47,6 +47,7 @@ function ready(){
     }
 //buy button 
 function buyButtonClicked(){
+    // window.location.replace("./houses");
     alert('Your order is placed');
     var cartContent = document.getElementsByClassName('cart-content')[0];
     while (cartContent.hasChildNodes()) {
