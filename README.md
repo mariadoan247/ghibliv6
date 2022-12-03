@@ -36,3 +36,8 @@ to the network access section.
 - https://www.youtube.com/watch?v=18Jvyp60Vbg
 - https://www.youtube.com/watch?v=llVt3SX_VsY
 - https://www.youtube.com/watch?v=qXXknB5bePU&t=5s
+
+## Contributers
+- Maria Doan
+- Rebekah Lee
+- Tina Nguyen
